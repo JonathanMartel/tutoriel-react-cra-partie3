@@ -1,0 +1,13 @@
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #eeeeee;
+    box-shadow: 0px 3px 5px #aaa;
+}
+.menu{
+    align-self: center;
+    align-content: flex-end;
+    display: flex;
+}

@@ -5,7 +5,7 @@ Requis :
 - node (>=14)
 - npm (>=5.2)
 - npx (avec npm >=5.2)
-
+0. Si le dossier node_modules est absent ou vide ($ npm install)
 1. Création d'un composant stateless (Entete et BoutonNav)
 2. Passage de paramètre à un composant (parent-enfant) (props)
 3. Création d'un composant stateful (Compteurs)
