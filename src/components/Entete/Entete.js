@@ -1,6 +1,7 @@
 import './Entete.css';
 import React from "react";
 import BoutonNav from '../BoutonNav/BoutonNav';
+import { Link, NavLink } from 'react-router-dom';
 
 export default class Entete extends React.Component {
   constructor(props){
@@ -9,11 +10,16 @@ export default class Entete extends React.Component {
   render(){ 
     return (    //JSX
       <header className="entete">
-          <h1>{this.props.titre || "Titre du site"}</h1>
+          <NavLink to="/"><h1>{this.props.titre || "Titre du site"}</h1></NavLink>
           <nav className="menu">
-              <BoutonNav lien="#1" label="Item 1" />
-              <BoutonNav lien="#2" label="Item 2" />
-              <BoutonNav lien="#3" label="Item 3" />
+              <BoutonNav lien="/" label="BtnNav Accueil" />
+              <Link to="/">Accueil</Link>
+              <BoutonNav lien="/compteur" label="BtnNav compteur" />
+              <Link to="/compteur">Compteur</Link>
+              <NavLink to="/compteur">Compteur (navLink)</NavLink>
+              <BoutonNav lien="/information" label="BtnNav Info" />
+              <Link to="/information">Information</Link>
+              <NavLink to="/information">Information(navLink)</NavLink>
           </nav>
       </header>  
     );

@@ -1,4 +1,4 @@
-Tutoriel sur le développement avec React.js
+Tutoriel sur le routage avec React.js
 (create-react-app)
 
 Requis : 
@@ -6,8 +6,9 @@ Requis :
 - npm (>=5.2)
 - npx (avec npm >=5.2)
 0. Si le dossier node_modules est absent ou vide ($ npm install)
-1. Création d'un composant stateless (Entete et BoutonNav)
-2. Passage de paramètre à un composant (parent-enfant) (props)
-3. Création d'un composant stateful (Compteurs)
-4. Gestion des événements "standard" (click, change, etc)
-5. Gestion des événements "surMesure"
+1. Installation du package react-router-dom
+2. Ajout des routes et des liens
+3. Passage de paramètre du router aux composants
+
+Source : 
+https://reactrouter.com/web
